@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ggplus1.github.io/blog-mirror/sitemap.xml
