@@ -9,18 +9,21 @@
 <meta name="author" content="연약지반 전문 공사업체 금강플러스">
 <meta name="robots" content="index, follow">
 
+<!-- 핵심: canonical 을 네이버 원문으로 지정 → 구글에 "원본은 네이버" 힌트 -->
+<link rel="canonical" href="https://blog.naver.com/ggplus1/224137664463?fromRss=true&amp;trackingCode=rss">
+
+<!-- 3초 후 네이버 원문으로 자동 이동 -->
+<meta http-equiv="refresh" content="3;url=https://blog.naver.com/ggplus1/224137664463?fromRss=true&amp;trackingCode=rss">
+
 <!-- Open Graph -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="작업반 시공참여_성산 합천현장 GCP 장비 조립 현장">
 <meta property="og:description" content="이번에는 성산 합천현장에서 작업반으로 시공참여 중인 GCP공법의 장비조립 현장을 소개해 보려고 합니다. 본 시공에 앞서 GCP 장비를 현장에 반입하고, 조립 및 세팅 작업을 순차적으로 진행했습니다. GCP공법은 장비의 수직도와 안정성이 시공 품질에 직접적인 영향을 주는 공법이기 때문에,…">
-<meta property="og:url" content="https://ggplus1.github.io/blog-mirror/posts/224137664463.html">
+<meta property="og:url" content="https://blog.naver.com/ggplus1/224137664463?fromRss=true&amp;trackingCode=rss">
 <meta property="og:site_name" content="연약지반 전문 공사업체 금강플러스">
 <meta property="article:published_time" content="2026-01-12T00:10:00+00:00">
 
-<!-- Canonical: 미러 페이지 자체를 정본으로 (구글이 이걸 색인) -->
-<link rel="canonical" href="https://ggplus1.github.io/blog-mirror/posts/224137664463.html">
-
-<!-- JSON-LD 구조화 데이터 -->
+<!-- JSON-LD: 원본을 네이버로 명시 -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -30,7 +33,7 @@
   "datePublished": "2026-01-12T00:10:00+00:00",
   "author": { "@type": "Organization", "name": "\uc5f0\uc57d\uc9c0\ubc18 \uc804\ubb38 \uacf5\uc0ac\uc5c5\uccb4 \uae08\uac15\ud50c\ub7ec\uc2a4" },
   "publisher": { "@type": "Organization", "name": "\uc5f0\uc57d\uc9c0\ubc18 \uc804\ubb38 \uacf5\uc0ac\uc5c5\uccb4 \uae08\uac15\ud50c\ub7ec\uc2a4" },
-  "mainEntityOfPage": "https://ggplus1.github.io/blog-mirror/posts/224137664463.html"
+  "mainEntityOfPage": "https://blog.naver.com/ggplus1/224137664463?fromRss=true\u0026trackingCode=rss"
 }
 </script>
 
@@ -38,7 +41,7 @@
   :root {
     --fg: #222;
     --muted: #666;
-    --accent: #0b5ed7;
+    --accent: #03c75a;
     --bg: #fff;
     --border: #e5e7eb;
   }
@@ -48,56 +51,75 @@
     margin: 0; padding: 0; color: var(--fg); background: var(--bg);
     line-height: 1.7;
   }
-  header, footer {
-    padding: 1rem 1.5rem; border-bottom: 1px solid var(--border);
-  }
-  footer { border-top: 1px solid var(--border); border-bottom: none; color: var(--muted); font-size: 0.9rem; }
-  header a.home { color: var(--fg); text-decoration: none; font-weight: 600; }
   main {
-    max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem;
+    max-width: 640px; margin: 0 auto; padding: 4rem 1.5rem 2rem;
+    text-align: center;
   }
-  h1 { font-size: 1.8rem; line-height: 1.3; margin: 0 0 0.5rem; }
-  .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
-  .content { word-break: keep-all; }
-  .content img { max-width: 100%; height: auto; }
-  .cta {
-    margin-top: 3rem; padding: 1.5rem; background: #f8fafc;
-    border: 1px solid var(--border); border-radius: 8px; text-align: center;
+  .company {
+    color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem;
   }
+  h1 {
+    font-size: 1.5rem; line-height: 1.4; margin: 0 0 1rem;
+    word-break: keep-all;
+  }
+  .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 2rem; }
+  .summary {
+    color: #444; font-size: 1rem; margin: 0 0 2.5rem;
+    padding: 1.5rem; background: #f8fafc; border-radius: 8px;
+    text-align: left; word-break: keep-all;
+  }
+  .cta { margin: 2rem 0; }
   .cta a {
-    display: inline-block; padding: 0.6rem 1.4rem; background: var(--accent);
+    display: inline-block; padding: 0.9rem 2rem; background: var(--accent);
     color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600;
+    font-size: 1.05rem;
   }
   .cta a:hover { opacity: 0.9; }
-  .cta p { margin: 0 0 0.8rem; color: var(--muted); }
+  .redirect-notice { margin-top: 1.5rem; font-size: 0.85rem; color: var(--muted); }
+  .redirect-notice .count {
+    display: inline-block; min-width: 1em; font-weight: 600; color: var(--accent);
+  }
+  .home-link { margin-top: 3rem; font-size: 0.85rem; }
+  .home-link a { color: var(--muted); text-decoration: none; }
+  .home-link a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 
-<header>
-  <a class="home" href="https://ggplus1.github.io/blog-mirror/">연약지반 전문 공사업체 금강플러스</a>
-</header>
-
 <main>
+  <div class="company">연약지반 전문 공사업체 금강플러스</div>
+
   <article>
     <h1>작업반 시공참여_성산 합천현장 GCP 장비 조립 현장</h1>
     <div class="meta">발행일: 2026-01-12</div>
-    <div class="content">
-      이번에는 성산 합천현장에서 작업반으로 시공참여 중인 GCP공법의 장비조립 현장을 소개해 보려고 합니다. 본 시공에 앞서 GCP 장비를 현장에 반입하고, 조립 및 세팅 작업을 순차적으로 진행했습니다. GCP공법은 장비의 수직도와 안정성이 시공 품질에 직접적인 영향을 주는 공법이기 때문에, 조립 단계부터 철저한 확인과 점검이 필수입니다. 현장에서는 장비 메인 마스트를 중심으로 각 부재를 조립하고, 유압 라인과 구동부 연결 상태를 하나하나 점검하며 작업을 진행했습니다. 특히 장비 수직도 확인과 하부 지반 상태 점검을 병행하여 본 시공시 발생할 수 있는 오차를 최소화하는 데 중점을 두었습니다. 사진에서 보시는것처럼 장비 조립....... <img src="https://blogthumb.pstatic.net/MjAyNjAxMDdfNTYg/MDAxNzY3NzU4ODkwNTI4.KPQeNueq3jyJxynCXi311Z-0aRW81b60mTbI8jT5PCAg.9E6BEY5JKSsXQBsCx3CxJQK20mOZyas0h4CMyvMkRxog.JPEG/4-1.%BD%C3%B0%F8%B0%E6%C7%E8_%C7%B3%BA%CE%C7%CF%B0%ED_%C5%B9%BF%F9%C7%D1_%BD%C3%B0%F8%B7%C2%C0%BB_%B0%AE%C3%E1_%BF%AC%BE%E0%C1%F6%B9%DD%BE%F7%C3%BC.JPG?type=s3"/>
-    </div>
+
+    <div class="summary">이번에는 성산 합천현장에서 작업반으로 시공참여 중인 GCP공법의 장비조립 현장을 소개해 보려고 합니다. 본 시공에 앞서 GCP 장비를 현장에 반입하고, 조립 및 세팅 작업을 순차적으로 진행했습니다. GCP공법은 장비의 수직도와 안정성이 시공 품질에 직접적인 영향을 주는 공법이기 때문에,…</div>
 
     <div class="cta">
-      <p>네이버 블로그에서 원문 전체와 댓글을 확인하실 수 있습니다.</p>
-      <a href="https://blog.naver.com/ggplus1/224137664463?fromRss=true&amp;trackingCode=rss" rel="noopener">네이버 블로그에서 원문 보기 →</a>
+      <a href="https://blog.naver.com/ggplus1/224137664463?fromRss=true&amp;trackingCode=rss" rel="noopener">네이버 블로그에서 전체 내용 보기 →</a>
+    </div>
+
+    <div class="redirect-notice">
+      <span class="count" id="countdown">3</span>초 후 네이버 블로그로 자동 이동합니다.
     </div>
   </article>
+
+  <div class="home-link">
+    <a href="https://ggplus1.github.io/blog-mirror/">← 전체 글 목록</a>
+  </div>
 </main>
 
-<footer>
-  <div style="max-width:760px; margin:0 auto;">
-    © 연약지반 전문 공사업체 금강플러스 · <a href="https://ggplus1.github.io/blog-mirror/">전체 글 보기</a>
-  </div>
-</footer>
+<script>
+  (function() {
+    var el = document.getElementById('countdown');
+    var n = 3;
+    var timer = setInterval(function() {
+      n -= 1;
+      if (n <= 0) { clearInterval(timer); el.textContent = '0'; }
+      else { el.textContent = String(n); }
+    }, 1000);
+  })();
+</script>
 
 </body>
 </html>

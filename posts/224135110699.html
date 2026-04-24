@@ -9,18 +9,21 @@
 <meta name="author" content="연약지반 전문 공사업체 금강플러스">
 <meta name="robots" content="index, follow">
 
+<!-- 핵심: canonical 을 네이버 원문으로 지정 → 구글에 "원본은 네이버" 힌트 -->
+<link rel="canonical" href="https://blog.naver.com/ggplus1/224135110699?fromRss=true&amp;trackingCode=rss">
+
+<!-- 3초 후 네이버 원문으로 자동 이동 -->
+<meta http-equiv="refresh" content="3;url=https://blog.naver.com/ggplus1/224135110699?fromRss=true&amp;trackingCode=rss">
+
 <!-- Open Graph -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="눈 내리는 솔라시도 현장, PBD 공법으로 연약지반을 다지다">
 <meta property="og:description" content="오늘은 솔라시도 기반조성공사 현장에서 진행 중인 연약지반 처리공사(PBD, Plastic Board Drain) 시공 모습을 소개합니다. 본 현장은 광범위한 연약지반이 분포된 구간으로, 향후 성토 및 구조물 시공에 앞서 지반의 침하를 최소화하고 안정성을 확보하기 위해 PBD공법을 적용하…">
-<meta property="og:url" content="https://ggplus1.github.io/blog-mirror/posts/224135110699.html">
+<meta property="og:url" content="https://blog.naver.com/ggplus1/224135110699?fromRss=true&amp;trackingCode=rss">
 <meta property="og:site_name" content="연약지반 전문 공사업체 금강플러스">
 <meta property="article:published_time" content="2026-01-06T00:10:00+00:00">
 
-<!-- Canonical: 미러 페이지 자체를 정본으로 (구글이 이걸 색인) -->
-<link rel="canonical" href="https://ggplus1.github.io/blog-mirror/posts/224135110699.html">
-
-<!-- JSON-LD 구조화 데이터 -->
+<!-- JSON-LD: 원본을 네이버로 명시 -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -30,7 +33,7 @@
   "datePublished": "2026-01-06T00:10:00+00:00",
   "author": { "@type": "Organization", "name": "\uc5f0\uc57d\uc9c0\ubc18 \uc804\ubb38 \uacf5\uc0ac\uc5c5\uccb4 \uae08\uac15\ud50c\ub7ec\uc2a4" },
   "publisher": { "@type": "Organization", "name": "\uc5f0\uc57d\uc9c0\ubc18 \uc804\ubb38 \uacf5\uc0ac\uc5c5\uccb4 \uae08\uac15\ud50c\ub7ec\uc2a4" },
-  "mainEntityOfPage": "https://ggplus1.github.io/blog-mirror/posts/224135110699.html"
+  "mainEntityOfPage": "https://blog.naver.com/ggplus1/224135110699?fromRss=true\u0026trackingCode=rss"
 }
 </script>
 
@@ -38,7 +41,7 @@
   :root {
     --fg: #222;
     --muted: #666;
-    --accent: #0b5ed7;
+    --accent: #03c75a;
     --bg: #fff;
     --border: #e5e7eb;
   }
@@ -48,56 +51,75 @@
     margin: 0; padding: 0; color: var(--fg); background: var(--bg);
     line-height: 1.7;
   }
-  header, footer {
-    padding: 1rem 1.5rem; border-bottom: 1px solid var(--border);
-  }
-  footer { border-top: 1px solid var(--border); border-bottom: none; color: var(--muted); font-size: 0.9rem; }
-  header a.home { color: var(--fg); text-decoration: none; font-weight: 600; }
   main {
-    max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem;
+    max-width: 640px; margin: 0 auto; padding: 4rem 1.5rem 2rem;
+    text-align: center;
   }
-  h1 { font-size: 1.8rem; line-height: 1.3; margin: 0 0 0.5rem; }
-  .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
-  .content { word-break: keep-all; }
-  .content img { max-width: 100%; height: auto; }
-  .cta {
-    margin-top: 3rem; padding: 1.5rem; background: #f8fafc;
-    border: 1px solid var(--border); border-radius: 8px; text-align: center;
+  .company {
+    color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem;
   }
+  h1 {
+    font-size: 1.5rem; line-height: 1.4; margin: 0 0 1rem;
+    word-break: keep-all;
+  }
+  .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 2rem; }
+  .summary {
+    color: #444; font-size: 1rem; margin: 0 0 2.5rem;
+    padding: 1.5rem; background: #f8fafc; border-radius: 8px;
+    text-align: left; word-break: keep-all;
+  }
+  .cta { margin: 2rem 0; }
   .cta a {
-    display: inline-block; padding: 0.6rem 1.4rem; background: var(--accent);
+    display: inline-block; padding: 0.9rem 2rem; background: var(--accent);
     color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600;
+    font-size: 1.05rem;
   }
   .cta a:hover { opacity: 0.9; }
-  .cta p { margin: 0 0 0.8rem; color: var(--muted); }
+  .redirect-notice { margin-top: 1.5rem; font-size: 0.85rem; color: var(--muted); }
+  .redirect-notice .count {
+    display: inline-block; min-width: 1em; font-weight: 600; color: var(--accent);
+  }
+  .home-link { margin-top: 3rem; font-size: 0.85rem; }
+  .home-link a { color: var(--muted); text-decoration: none; }
+  .home-link a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 
-<header>
-  <a class="home" href="https://ggplus1.github.io/blog-mirror/">연약지반 전문 공사업체 금강플러스</a>
-</header>
-
 <main>
+  <div class="company">연약지반 전문 공사업체 금강플러스</div>
+
   <article>
     <h1>눈 내리는 솔라시도 현장, PBD 공법으로 연약지반을 다지다</h1>
     <div class="meta">발행일: 2026-01-06</div>
-    <div class="content">
-      오늘은 솔라시도 기반조성공사 현장에서 진행 중인 연약지반 처리공사(PBD, Plastic Board Drain) 시공 모습을 소개합니다. 본 현장은 광범위한 연약지반이 분포된 구간으로, 향후 성토 및 구조물 시공에 앞서 지반의 침하를 최소화하고 안정성을 확보하기 위해 PBD공법을 적용하고 있습니다. 사진은 강설 속에서도 정상적으로 진행 중인 시공 현장 모습입니다. PBD(Plastic Board Drain) 공법이란? PBD 공법은 연약한 점토지반 내에 플라스틱 배수재를 일정 간격으로 관입하여 지반 내부의 간극수를 빠르게 배출시키는 연약지반 처리 공법입니다. 배수재 설치 후 성토 하중을 가하면 자연 압밀보다 훨씬 짧은 기간 내에 압밀이 진행되어 공기 단....... <img src="https://blogthumb.pstatic.net/MjAyNjAxMDVfMTk4/MDAxNzY3NTk2MDM2MzYz.w79pVRxQ4ohH8qqGFz3CfEtXs22cCJL_8us47e66h94g.A4rdVR_HiwOHx-MWMGJ0il-3sxjLS_kk1VH8JY78Miwg.JPEG/KakaoTalk_20260105_104859861_01.jpg?type=s3"/>
-    </div>
+
+    <div class="summary">오늘은 솔라시도 기반조성공사 현장에서 진행 중인 연약지반 처리공사(PBD, Plastic Board Drain) 시공 모습을 소개합니다. 본 현장은 광범위한 연약지반이 분포된 구간으로, 향후 성토 및 구조물 시공에 앞서 지반의 침하를 최소화하고 안정성을 확보하기 위해 PBD공법을 적용하…</div>
 
     <div class="cta">
-      <p>네이버 블로그에서 원문 전체와 댓글을 확인하실 수 있습니다.</p>
-      <a href="https://blog.naver.com/ggplus1/224135110699?fromRss=true&amp;trackingCode=rss" rel="noopener">네이버 블로그에서 원문 보기 →</a>
+      <a href="https://blog.naver.com/ggplus1/224135110699?fromRss=true&amp;trackingCode=rss" rel="noopener">네이버 블로그에서 전체 내용 보기 →</a>
+    </div>
+
+    <div class="redirect-notice">
+      <span class="count" id="countdown">3</span>초 후 네이버 블로그로 자동 이동합니다.
     </div>
   </article>
+
+  <div class="home-link">
+    <a href="https://ggplus1.github.io/blog-mirror/">← 전체 글 목록</a>
+  </div>
 </main>
 
-<footer>
-  <div style="max-width:760px; margin:0 auto;">
-    © 연약지반 전문 공사업체 금강플러스 · <a href="https://ggplus1.github.io/blog-mirror/">전체 글 보기</a>
-  </div>
-</footer>
+<script>
+  (function() {
+    var el = document.getElementById('countdown');
+    var n = 3;
+    var timer = setInterval(function() {
+      n -= 1;
+      if (n <= 0) { clearInterval(timer); el.textContent = '0'; }
+      else { el.textContent = String(n); }
+    }, 1000);
+  })();
+</script>
 
 </body>
 </html>

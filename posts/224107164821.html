@@ -9,18 +9,21 @@
 <meta name="author" content="연약지반 전문 공사업체 금강플러스">
 <meta name="robots" content="index, follow">
 
+<!-- 핵심: canonical 을 네이버 원문으로 지정 → 구글에 "원본은 네이버" 힌트 -->
+<link rel="canonical" href="https://blog.naver.com/ggplus1/224107164821?fromRss=true&amp;trackingCode=rss">
+
+<!-- 3초 후 네이버 원문으로 자동 이동 -->
+<meta http-equiv="refresh" content="3;url=https://blog.naver.com/ggplus1/224107164821?fromRss=true&amp;trackingCode=rss">
+
 <!-- Open Graph -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="송산 1-3지구 PBD 타설 현장">
 <meta property="og:description" content="오늘은 송산 1-3지구에서 진행중인 연악지반처리(PBD) 공사 현장을 소개하려고 합니다. 이 현장은 유압식, 인입식으로 시공하고 있으며 아래 사진은 실제 현장에서 진행된 PBD 타설 과정입니다. 1. PBD공법이란? PBD(Plastic Board Drain)는 연약지반의 배수를 촉진시…">
-<meta property="og:url" content="https://ggplus1.github.io/blog-mirror/posts/224107164821.html">
+<meta property="og:url" content="https://blog.naver.com/ggplus1/224107164821?fromRss=true&amp;trackingCode=rss">
 <meta property="og:site_name" content="연약지반 전문 공사업체 금강플러스">
 <meta property="article:published_time" content="2025-12-15T00:10:00+00:00">
 
-<!-- Canonical: 미러 페이지 자체를 정본으로 (구글이 이걸 색인) -->
-<link rel="canonical" href="https://ggplus1.github.io/blog-mirror/posts/224107164821.html">
-
-<!-- JSON-LD 구조화 데이터 -->
+<!-- JSON-LD: 원본을 네이버로 명시 -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -30,7 +33,7 @@
   "datePublished": "2025-12-15T00:10:00+00:00",
   "author": { "@type": "Organization", "name": "\uc5f0\uc57d\uc9c0\ubc18 \uc804\ubb38 \uacf5\uc0ac\uc5c5\uccb4 \uae08\uac15\ud50c\ub7ec\uc2a4" },
   "publisher": { "@type": "Organization", "name": "\uc5f0\uc57d\uc9c0\ubc18 \uc804\ubb38 \uacf5\uc0ac\uc5c5\uccb4 \uae08\uac15\ud50c\ub7ec\uc2a4" },
-  "mainEntityOfPage": "https://ggplus1.github.io/blog-mirror/posts/224107164821.html"
+  "mainEntityOfPage": "https://blog.naver.com/ggplus1/224107164821?fromRss=true\u0026trackingCode=rss"
 }
 </script>
 
@@ -38,7 +41,7 @@
   :root {
     --fg: #222;
     --muted: #666;
-    --accent: #0b5ed7;
+    --accent: #03c75a;
     --bg: #fff;
     --border: #e5e7eb;
   }
@@ -48,56 +51,75 @@
     margin: 0; padding: 0; color: var(--fg); background: var(--bg);
     line-height: 1.7;
   }
-  header, footer {
-    padding: 1rem 1.5rem; border-bottom: 1px solid var(--border);
-  }
-  footer { border-top: 1px solid var(--border); border-bottom: none; color: var(--muted); font-size: 0.9rem; }
-  header a.home { color: var(--fg); text-decoration: none; font-weight: 600; }
   main {
-    max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem;
+    max-width: 640px; margin: 0 auto; padding: 4rem 1.5rem 2rem;
+    text-align: center;
   }
-  h1 { font-size: 1.8rem; line-height: 1.3; margin: 0 0 0.5rem; }
-  .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
-  .content { word-break: keep-all; }
-  .content img { max-width: 100%; height: auto; }
-  .cta {
-    margin-top: 3rem; padding: 1.5rem; background: #f8fafc;
-    border: 1px solid var(--border); border-radius: 8px; text-align: center;
+  .company {
+    color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem;
   }
+  h1 {
+    font-size: 1.5rem; line-height: 1.4; margin: 0 0 1rem;
+    word-break: keep-all;
+  }
+  .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 2rem; }
+  .summary {
+    color: #444; font-size: 1rem; margin: 0 0 2.5rem;
+    padding: 1.5rem; background: #f8fafc; border-radius: 8px;
+    text-align: left; word-break: keep-all;
+  }
+  .cta { margin: 2rem 0; }
   .cta a {
-    display: inline-block; padding: 0.6rem 1.4rem; background: var(--accent);
+    display: inline-block; padding: 0.9rem 2rem; background: var(--accent);
     color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600;
+    font-size: 1.05rem;
   }
   .cta a:hover { opacity: 0.9; }
-  .cta p { margin: 0 0 0.8rem; color: var(--muted); }
+  .redirect-notice { margin-top: 1.5rem; font-size: 0.85rem; color: var(--muted); }
+  .redirect-notice .count {
+    display: inline-block; min-width: 1em; font-weight: 600; color: var(--accent);
+  }
+  .home-link { margin-top: 3rem; font-size: 0.85rem; }
+  .home-link a { color: var(--muted); text-decoration: none; }
+  .home-link a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 
-<header>
-  <a class="home" href="https://ggplus1.github.io/blog-mirror/">연약지반 전문 공사업체 금강플러스</a>
-</header>
-
 <main>
+  <div class="company">연약지반 전문 공사업체 금강플러스</div>
+
   <article>
     <h1>송산 1-3지구 PBD 타설 현장</h1>
     <div class="meta">발행일: 2025-12-15</div>
-    <div class="content">
-      오늘은 송산 1-3지구에서 진행중인 연악지반처리(PBD) 공사 현장을 소개하려고 합니다. 이 현장은 유압식, 인입식으로 시공하고 있으며 아래 사진은 실제 현장에서 진행된 PBD 타설 과정입니다. 1. PBD공법이란? PBD(Plastic Board Drain)는 연약지반의 배수를 촉진시키기 위해 지반 깊숙이 플라스틱 보드 형태의 배수재를 설치하는 공법입니다. 연약한 점토층은 압밀이 자연적으로 매우 오래 걸리기 때문에 PBD를 설치하면 지하수 배수 경로를 단축하여 압밀 시간을 크게 줄이고 지반 안정성을 확보할 수 있습니다. 2. 주요원리 연약지반에 드레인을 촘촘히 박아 넣으면 → 수압이 빠르게 감소 → 흙이 압밀·침하되며 지반이 단단해짐 3. PBD 시....... <img src="https://blogthumb.pstatic.net/MjAyNTEyMTJfMTI0/MDAxNzY1NTA2NjUyNTcw.mf4_FjdTIIRzwWJtwJrOhtmT129Ds-m98-lvHnzJingg.AoCG6A2aZaI8yzqusHqtZT7yTAzWd7U3RR_X0pTKbnEg.JPEG/KakaoTalk_20251125_095055014.jpg?type=s3"/>
-    </div>
+
+    <div class="summary">오늘은 송산 1-3지구에서 진행중인 연악지반처리(PBD) 공사 현장을 소개하려고 합니다. 이 현장은 유압식, 인입식으로 시공하고 있으며 아래 사진은 실제 현장에서 진행된 PBD 타설 과정입니다. 1. PBD공법이란? PBD(Plastic Board Drain)는 연약지반의 배수를 촉진시…</div>
 
     <div class="cta">
-      <p>네이버 블로그에서 원문 전체와 댓글을 확인하실 수 있습니다.</p>
-      <a href="https://blog.naver.com/ggplus1/224107164821?fromRss=true&amp;trackingCode=rss" rel="noopener">네이버 블로그에서 원문 보기 →</a>
+      <a href="https://blog.naver.com/ggplus1/224107164821?fromRss=true&amp;trackingCode=rss" rel="noopener">네이버 블로그에서 전체 내용 보기 →</a>
+    </div>
+
+    <div class="redirect-notice">
+      <span class="count" id="countdown">3</span>초 후 네이버 블로그로 자동 이동합니다.
     </div>
   </article>
+
+  <div class="home-link">
+    <a href="https://ggplus1.github.io/blog-mirror/">← 전체 글 목록</a>
+  </div>
 </main>
 
-<footer>
-  <div style="max-width:760px; margin:0 auto;">
-    © 연약지반 전문 공사업체 금강플러스 · <a href="https://ggplus1.github.io/blog-mirror/">전체 글 보기</a>
-  </div>
-</footer>
+<script>
+  (function() {
+    var el = document.getElementById('countdown');
+    var n = 3;
+    var timer = setInterval(function() {
+      n -= 1;
+      if (n <= 0) { clearInterval(timer); el.textContent = '0'; }
+      else { el.textContent = String(n); }
+    }, 1000);
+  })();
+</script>
 
 </body>
 </html>

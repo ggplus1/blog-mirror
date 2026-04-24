@@ -9,18 +9,21 @@
 <meta name="author" content="연약지반 전문 공사업체 금강플러스">
 <meta name="robots" content="index, follow">
 
+<!-- 핵심: canonical 을 네이버 원문으로 지정 → 구글에 "원본은 네이버" 힌트 -->
+<link rel="canonical" href="https://blog.naver.com/ggplus1/224151851082?fromRss=true&amp;trackingCode=rss">
+
+<!-- 3초 후 네이버 원문으로 자동 이동 -->
+<meta http-equiv="refresh" content="3;url=https://blog.naver.com/ggplus1/224151851082?fromRss=true&amp;trackingCode=rss">
+
 <!-- Open Graph -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="성산 합천 GCP 시공현장_연얀지반개량공사 현장사진">
 <meta property="og:description" content="이번에 소개할 현장은 성산 합천 지역에서 진행중인 GCP(Gravel Compaction Pile) 시공 현장입니다. 연약지반으로 인해 구조물 안정성 확보가 중요한 구간은 GCP 공법을 적용하여 지반 개량 작업을 진행하고 있습니다. 현장에서는 대형 GCP장비를 이용해 정해진 위치에 천공…">
-<meta property="og:url" content="https://ggplus1.github.io/blog-mirror/posts/224151851082.html">
+<meta property="og:url" content="https://blog.naver.com/ggplus1/224151851082?fromRss=true&amp;trackingCode=rss">
 <meta property="og:site_name" content="연약지반 전문 공사업체 금강플러스">
 <meta property="article:published_time" content="2026-01-19T04:40:00+00:00">
 
-<!-- Canonical: 미러 페이지 자체를 정본으로 (구글이 이걸 색인) -->
-<link rel="canonical" href="https://ggplus1.github.io/blog-mirror/posts/224151851082.html">
-
-<!-- JSON-LD 구조화 데이터 -->
+<!-- JSON-LD: 원본을 네이버로 명시 -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -30,7 +33,7 @@
   "datePublished": "2026-01-19T04:40:00+00:00",
   "author": { "@type": "Organization", "name": "\uc5f0\uc57d\uc9c0\ubc18 \uc804\ubb38 \uacf5\uc0ac\uc5c5\uccb4 \uae08\uac15\ud50c\ub7ec\uc2a4" },
   "publisher": { "@type": "Organization", "name": "\uc5f0\uc57d\uc9c0\ubc18 \uc804\ubb38 \uacf5\uc0ac\uc5c5\uccb4 \uae08\uac15\ud50c\ub7ec\uc2a4" },
-  "mainEntityOfPage": "https://ggplus1.github.io/blog-mirror/posts/224151851082.html"
+  "mainEntityOfPage": "https://blog.naver.com/ggplus1/224151851082?fromRss=true\u0026trackingCode=rss"
 }
 </script>
 
@@ -38,7 +41,7 @@
   :root {
     --fg: #222;
     --muted: #666;
-    --accent: #0b5ed7;
+    --accent: #03c75a;
     --bg: #fff;
     --border: #e5e7eb;
   }
@@ -48,56 +51,75 @@
     margin: 0; padding: 0; color: var(--fg); background: var(--bg);
     line-height: 1.7;
   }
-  header, footer {
-    padding: 1rem 1.5rem; border-bottom: 1px solid var(--border);
-  }
-  footer { border-top: 1px solid var(--border); border-bottom: none; color: var(--muted); font-size: 0.9rem; }
-  header a.home { color: var(--fg); text-decoration: none; font-weight: 600; }
   main {
-    max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem;
+    max-width: 640px; margin: 0 auto; padding: 4rem 1.5rem 2rem;
+    text-align: center;
   }
-  h1 { font-size: 1.8rem; line-height: 1.3; margin: 0 0 0.5rem; }
-  .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
-  .content { word-break: keep-all; }
-  .content img { max-width: 100%; height: auto; }
-  .cta {
-    margin-top: 3rem; padding: 1.5rem; background: #f8fafc;
-    border: 1px solid var(--border); border-radius: 8px; text-align: center;
+  .company {
+    color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem;
   }
+  h1 {
+    font-size: 1.5rem; line-height: 1.4; margin: 0 0 1rem;
+    word-break: keep-all;
+  }
+  .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 2rem; }
+  .summary {
+    color: #444; font-size: 1rem; margin: 0 0 2.5rem;
+    padding: 1.5rem; background: #f8fafc; border-radius: 8px;
+    text-align: left; word-break: keep-all;
+  }
+  .cta { margin: 2rem 0; }
   .cta a {
-    display: inline-block; padding: 0.6rem 1.4rem; background: var(--accent);
+    display: inline-block; padding: 0.9rem 2rem; background: var(--accent);
     color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600;
+    font-size: 1.05rem;
   }
   .cta a:hover { opacity: 0.9; }
-  .cta p { margin: 0 0 0.8rem; color: var(--muted); }
+  .redirect-notice { margin-top: 1.5rem; font-size: 0.85rem; color: var(--muted); }
+  .redirect-notice .count {
+    display: inline-block; min-width: 1em; font-weight: 600; color: var(--accent);
+  }
+  .home-link { margin-top: 3rem; font-size: 0.85rem; }
+  .home-link a { color: var(--muted); text-decoration: none; }
+  .home-link a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 
-<header>
-  <a class="home" href="https://ggplus1.github.io/blog-mirror/">연약지반 전문 공사업체 금강플러스</a>
-</header>
-
 <main>
+  <div class="company">연약지반 전문 공사업체 금강플러스</div>
+
   <article>
     <h1>성산 합천 GCP 시공현장_연얀지반개량공사 현장사진</h1>
     <div class="meta">발행일: 2026-01-19</div>
-    <div class="content">
-      이번에 소개할 현장은 성산 합천 지역에서 진행중인 GCP(Gravel Compaction Pile) 시공 현장입니다. 연약지반으로 인해 구조물 안정성 확보가 중요한 구간은 GCP 공법을 적용하여 지반 개량 작업을 진행하고 있습니다. 현장에서는 대형 GCP장비를 이용해 정해진 위치에 천공 후 쇄석을 투입하고, 반복 다짐을 통해 지반을 치밀하게 개량하는 작업이 이루어지고 있습니다. 시공 중에는 장비 안정성 확보와 작업 동선 관리, 안전시설 설치를 철저히 하여 안전한 시공 환경을 유지하고 있습니다. 특히 성산 합천 현장은 주변 도로와 인접한 구간이 있어, 작업 반경 통제 안전 콘 설치 장비 이동 시 유도 관리 등 안전관리에 더욱 신경쓰며 시공을 진....... <img src="https://blogthumb.pstatic.net/MjAyNjAxMTlfMjEz/MDAxNzY4Nzk2MzgyMzAy.5ovKM-DaT_mWmhv3awXtOtUsKRWqaGBXFmNSTYd9irAg.WzNO13Y599gYbE8hcXH0X5mEahrtvWIm8C3kFnBtoKMg.JPEG/KakaoTalk_20260105_104918745_02.jpg?type=s3"/>
-    </div>
+
+    <div class="summary">이번에 소개할 현장은 성산 합천 지역에서 진행중인 GCP(Gravel Compaction Pile) 시공 현장입니다. 연약지반으로 인해 구조물 안정성 확보가 중요한 구간은 GCP 공법을 적용하여 지반 개량 작업을 진행하고 있습니다. 현장에서는 대형 GCP장비를 이용해 정해진 위치에 천공…</div>
 
     <div class="cta">
-      <p>네이버 블로그에서 원문 전체와 댓글을 확인하실 수 있습니다.</p>
-      <a href="https://blog.naver.com/ggplus1/224151851082?fromRss=true&amp;trackingCode=rss" rel="noopener">네이버 블로그에서 원문 보기 →</a>
+      <a href="https://blog.naver.com/ggplus1/224151851082?fromRss=true&amp;trackingCode=rss" rel="noopener">네이버 블로그에서 전체 내용 보기 →</a>
+    </div>
+
+    <div class="redirect-notice">
+      <span class="count" id="countdown">3</span>초 후 네이버 블로그로 자동 이동합니다.
     </div>
   </article>
+
+  <div class="home-link">
+    <a href="https://ggplus1.github.io/blog-mirror/">← 전체 글 목록</a>
+  </div>
 </main>
 
-<footer>
-  <div style="max-width:760px; margin:0 auto;">
-    © 연약지반 전문 공사업체 금강플러스 · <a href="https://ggplus1.github.io/blog-mirror/">전체 글 보기</a>
-  </div>
-</footer>
+<script>
+  (function() {
+    var el = document.getElementById('countdown');
+    var n = 3;
+    var timer = setInterval(function() {
+      n -= 1;
+      if (n <= 0) { clearInterval(timer); el.textContent = '0'; }
+      else { el.textContent = String(n); }
+    }, 1000);
+  })();
+</script>
 
 </body>
 </html>
