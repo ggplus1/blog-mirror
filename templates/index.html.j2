@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ site_title }} | {{ site_desc }}</title>
+<meta name="description" content="{{ site_desc }}">
+<meta name="keywords" content="{{ keywords }}">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ site_title }}">
+<meta property="og:description" content="{{ site_desc }}">
+<meta property="og:url" content="{{ site_url }}/">
+
+<link rel="canonical" href="{{ site_url }}/">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://rss.blog.naver.com/{{ blog_id }}.xml">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": {{ site_title|tojson }},
+  "description": {{ site_desc|tojson }},
+  "url": "{{ site_url }}/",
+  "sameAs": ["https://blog.naver.com/{{ blog_id }}"]
+}
+</script>
+
+<style>
+  :root { --fg:#222; --muted:#666; --accent:#0b5ed7; --border:#e5e7eb; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    margin: 0; padding: 0; color: var(--fg); line-height: 1.6;
+  }
+  header {
+    padding: 2.5rem 1.5rem; border-bottom: 1px solid var(--border);
+    text-align: center;
+  }
+  header h1 { margin: 0 0 0.5rem; font-size: 1.8rem; }
+  header p { margin: 0; color: var(--muted); }
+  header .links { margin-top: 1rem; font-size: 0.9rem; }
+  header .links a { color: var(--accent); text-decoration: none; margin: 0 0.5rem; }
+  main { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem; }
+  .post-item {
+    padding: 1.2rem 0; border-bottom: 1px solid var(--border);
+  }
+  .post-item:last-child { border-bottom: none; }
+  .post-item h2 { margin: 0 0 0.4rem; font-size: 1.15rem; }
+  .post-item h2 a { color: var(--fg); text-decoration: none; }
+  .post-item h2 a:hover { color: var(--accent); }
+  .post-item .date { color: var(--muted); font-size: 0.85rem; }
+  .post-item .excerpt { color: #444; margin: 0.4rem 0 0; font-size: 0.95rem; }
+  footer {
+    padding: 1.5rem; text-align: center; color: var(--muted);
+    font-size: 0.85rem; border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>{{ site_title }}</h1>
+  <p>{{ site_desc }}</p>
+  <div class="links">
+    <a href="https://blog.naver.com/{{ blog_id }}" rel="noopener">네이버 블로그 원본</a>
+  </div>
+</header>
+
+<main>
+  {% if posts %}
+    {% for p in posts %}
+    <div class="post-item">
+      <h2><a href="{{ site_url }}/posts/{{ p.post_no }}.html">{{ p.title }}</a></h2>
+      <div class="date">{{ p.published[:10] }}</div>
+      <p class="excerpt">{{ p.summary }}</p>
+    </div>
+    {% endfor %}
+  {% else %}
+    <p style="text-align:center; color:var(--muted); padding:3rem 0;">
+      아직 게시물이 없습니다.
+    </p>
+  {% endif %}
+</main>
+
+<footer>
+  © {{ site_title }} · 최종 업데이트: {{ updated }}
+</footer>
+
+</body>
+</html>
